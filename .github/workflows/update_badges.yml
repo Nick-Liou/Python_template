@@ -6,6 +6,7 @@ name: Update Status Badges
 
 on:
   create:
+  workflow_dispatch:
     
 permissions:
     contents: write
@@ -31,8 +32,6 @@ jobs:
           
           sed -i "s/Nick-Liou/$REPO_OWNER/g" README.md
           sed -i "s/Python_template/$REPO_NAME/g" README.md
-        #   sed -i "s/Python_template_test/$REPO_NAME/g" README.md
-
         
 
         
