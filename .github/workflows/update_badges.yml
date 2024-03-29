@@ -2,7 +2,7 @@ name: Update Status Badges
 
 on:
   repository_dispatch:
-    types: [created]
+    types: [create]
 
     
 permissions:
