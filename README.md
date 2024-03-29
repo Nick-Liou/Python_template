@@ -1,3 +1,6 @@
+[![Mypy](https://github.com/Nick-Liou/Python_template/actions/workflows/mypy.yml/badge.svg)](https://github.com/Nick-Liou/Python_template/actions/workflows/mypy.yml)
+[![Tests](https://github.com/Nick-Liou/Python_template/actions/workflows/pytest.yml/badge.svg)](https://github.com/Nick-Liou/Python_template/actions/workflows/pytest.yml)
+
 # Python_template
 A template for Python projects with github actions for 
 - tests (with pytest)
