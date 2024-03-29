@@ -5,9 +5,8 @@
 A template for Python projects with github actions for 
 - tests (with pytest)
 - type anotations (with Mypy)
+- automaticaly updating the badges and the Installation using the new username and repo name on creation
 
-## User name: Nick-Liou
-## Repo name: Python_template
 
 ## Installation
 

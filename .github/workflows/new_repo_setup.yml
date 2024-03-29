@@ -1,5 +1,5 @@
-name: Update Status Badges
-
+name: Update Status Badges and Installation instructions
+# New Repo Setup
 
 on:
   create:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update Status Badges
+      - name: Update Status Badges and Installation instructions
         run: |
           # Extract repository owner and name from environment variables
           REPO_OWNER=$(echo "$GITHUB_REPOSITORY" | cut -d'/' -f1)
