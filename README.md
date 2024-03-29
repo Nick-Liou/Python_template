@@ -6,10 +6,8 @@ A template for Python projects with github actions for
 - tests (with pytest)
 - type anotations (with Mypy)
 
-
-<!-- Nick-Liou -->
-<!-- Python_template -->
-<!-- Python_template_test -->
+## user name: Nick-Liou
+## repo name: Python_template
 
 ## Installation
 
@@ -17,11 +15,11 @@ A template for Python projects with github actions for
 
 1. Clone this repository:   
     ```
-    git clone https://github.com/Nick-Liou/NAME.git
+    git clone https://github.com/Nick-Liou/Python_template.git
     ```
 2. Navigate to the project directory:   
     ```
-    cd NAME
+    cd Python_template
     ```
 3. Install the required dependencies using pip:
     ```
