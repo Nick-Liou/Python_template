@@ -1,3 +1,11 @@
+# This is a workaround for relative imports to work in this file
+# # Add the parent directory of the current script's directory to the Python path
+# import sys
+# import os
+
+# SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current script
+# sys.path.append(os.path.dirname(SCRIPT_DIR))  # Add the parent directory to the Python path
+
 import pytest
 
 

@@ -21,5 +21,10 @@ A template for Python projects with github actions for
     ```
     pip install -r requirements.txt
     ```
-<!-- Use  "pipreqs" to auto generate the requirements  -->
-<!-- mypy --ignore-missing-imports --explicit-package-bases  . -->
+
+
+<!-- 
+Use  "pipreqs . --mode no-pin" to auto generate the requirements 
+note it may not work recursively  
+-->
+
