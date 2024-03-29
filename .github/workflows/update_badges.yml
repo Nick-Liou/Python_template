@@ -30,10 +30,17 @@ jobs:
         #   sed -i "s#https://github.com/Nick-Liou/Python_template/actions/workflows/mypy.yml/badge.svg#https://github.com/$REPO_OWNER/$REPO_NAME/actions/workflows/mypy.yml/badge.svg#" README.md
         #   sed -i "s#https://github.com/Nick-Liou/Python_template/actions/workflows/pytest.yml/badge.svg#https://github.com/$REPO_OWNER/$REPO_NAME/actions/workflows/pytest.yml/badge.svg#" README.md
 
+
+        
+      - name: Set up Git
+        run: |
+            git config --global user.name 'GitHub Actions'
+            git config --global user.email 'actions@github.com'
+
       - name: Commit and push changes
         run: |
-          git config --global user.name 'Your Name'
-          git config --global user.email 'youremail@example.com'
-          git add README.md
-          git commit -m "Update status badges"
-          git push
+            git add README.md
+            git commit -m "Update README"
+            git push
+        #   git config --global user.name 'Your Name'
+        #   git config --global user.email 'youremail@example.com'
