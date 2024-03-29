@@ -8,6 +8,14 @@ on:
   repository_dispatch:
     types: [created]
 
+    
+permissions:
+    contents: write
+    pull-requests: read
+    issues: read
+    packages: read
+    security-events: read
+
 jobs:
   update-badge:
     runs-on: ubuntu-latest
