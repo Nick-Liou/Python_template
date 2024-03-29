@@ -1,0 +1,39 @@
+name: Update Status Badges
+
+on:
+    
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types: [created]
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update Status Badges
+        run: |
+          # Extract repository owner and name from environment variables
+          REPO_OWNER=$(echo "$GITHUB_REPOSITORY" | cut -d'/' -f1)
+          REPO_NAME=$(echo "$GITHUB_REPOSITORY" | cut -d'/' -f2)
+
+          # Update the status badge URLs in README.md
+          
+          sed -i "s/Nick-Liou/$REPO_OWNER/g" README.md
+          sed -i "s/Python_template_test/$REPO_NAME/g" README.md
+          sed -i "s/Python_template/$REPO_NAME/g" README.md
+
+        #   sed -i "s#https://github.com/Nick-Liou/Python_template/actions/workflows/mypy.yml/badge.svg#https://github.com/$REPO_OWNER/$REPO_NAME/actions/workflows/mypy.yml/badge.svg#" README.md
+        #   sed -i "s#https://github.com/Nick-Liou/Python_template/actions/workflows/pytest.yml/badge.svg#https://github.com/$REPO_OWNER/$REPO_NAME/actions/workflows/pytest.yml/badge.svg#" README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'Your Name'
+          git config --global user.email 'youremail@example.com'
+          git add README.md
+          git commit -m "Update status badges"
+          git push

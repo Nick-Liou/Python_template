@@ -7,6 +7,9 @@ A template for Python projects with github actions for
 - type anotations (with Mypy)
 
 
+<!-- Nick-Liou -->
+<!-- Python_template -->
+<!-- Python_template_test -->
 
 ## Installation
 
