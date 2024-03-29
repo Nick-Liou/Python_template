@@ -1,9 +1,11 @@
 name: Update Status Badges
 
-on:
-  repository_dispatch:
-    types: [create]
+# on:
+#   repository_dispatch:
+#     types: [create]
 
+on:
+  create:
     
 permissions:
     contents: write
