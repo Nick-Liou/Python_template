@@ -1,8 +1,5 @@
 name: Update Status Badges
 
-# on:
-#   repository_dispatch:
-#     types: [create]
 
 on:
   create:
@@ -10,10 +7,6 @@ on:
     
 permissions:
     contents: write
-    # pull-requests: read
-    # issues: read
-    # packages: read
-    # security-events: read
 
 jobs:
   update-badge:
@@ -28,8 +21,7 @@ jobs:
           REPO_OWNER=$(echo "$GITHUB_REPOSITORY" | cut -d'/' -f1)
           REPO_NAME=$(echo "$GITHUB_REPOSITORY" | cut -d'/' -f2)
 
-          # Update the status badge URLs in README.md
-          
+          # Update the status badges URLs and instructions in README.md          
           sed -i "s/Nick-Liou/$REPO_OWNER/g" README.md
           sed -i "s/Python_template/$REPO_NAME/g" README.md
         

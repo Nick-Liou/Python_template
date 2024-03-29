@@ -6,12 +6,10 @@ A template for Python projects with github actions for
 - tests (with pytest)
 - type anotations (with Mypy)
 
-## user name: Nick-Liou
-## repo name: Python_template
+## User name: Nick-Liou
+## Repo name: Python_template
 
 ## Installation
-
-<!-- Change the "NAME" -->
 
 1. Clone this repository:   
     ```
