@@ -24,6 +24,10 @@ jobs:
           # Update the status badges URLs and instructions in README.md          
           sed -i "s/Nick-Liou/$REPO_OWNER/g" README.md
           sed -i "s/Python_template/$REPO_NAME/g" README.md
+          sed -i "s/A template for Python projects with github actions for / /g" README.md
+          sed -i "s/- tests (with pytest)/ /g" README.md
+          sed -i "s/- type anotations (with Mypy)/ /g" README.md
+          sed -i "s/- automaticaly updating the badges and the Installation using the new username and repo name on creation/ /g" README.md
         
 
         
